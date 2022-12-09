@@ -1,0 +1,7 @@
+/**
+ * Sets default consent for OneTrust based on the related data element.
+ */
+gtag('consent', 'default', {
+  'ad_storage': _satellite.getVar('OneTrust | Targeting Enabled') ? 'granted' : 'denied',
+  'analytics_storage': _satellite.getVar('OneTrust | Performance Enabled') ? 'granted' : 'denied',
+});
